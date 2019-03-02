@@ -3,7 +3,7 @@
 
   <head>
     <link rel="stylesheet" href="style.css">
-    
+
     <style>
     BODY {
   align-items: center;
@@ -11,6 +11,7 @@
   background: white;
   font-family: Georgia;
   }
+
 H1 {
   font-size: 30px;
   font-weight: normal;
@@ -23,7 +24,7 @@ H1 {
     text-shadow: 0 0 0px #333;
     cursor: pointer;
     }
-  
+  {
    </style>
  <script> 
  function func1(){ 
@@ -36,39 +37,18 @@ var r;
  r=Number(document.getElementById("b_znach").value);
  document.getElementById("b").innerHTML ="<h1>"+"Диаметр"+"<br>"+ r*2+"</h1>";
  }
+ 
  function func3(){
-var h=Number(document.getElementById("c_znach").value);
- document.getElementById("asd").innerHTML ="<h1>"+"Расстояние"+"<br>"+(6350+h)*(6350+h)-6350*6350/2+"<h1>";
- }
- function func4(){
-var l=Number(document.getElementById("d_znach").value);
- document.getElementById("avd").innerHTML ="<h1>"+"Расстояние"+"<br>"+ l*l*l +"<h1>";
- document.getElementById("zcd").innerHTML ="<h1>"+"Площадь поверхности"+"<br>"+ l*l*6 +"<h1>";
+ var d;
+  d=Number(document.getElementById("d_znach").value);
+ q=(d-d%10)/10;
+ w = d - (q*10)
+ document.getElementById("d").innerHTML="<h1>" + "Ltzcnrb" + "<br>" + q + "<h1>"
+
+ document.getElementById("e").innerHTML="<h1>" + "Ltzcnrb" + "<br>" + w + "<h1>"
  
- }
- function func5(){
-var r;
-var r1;
-r=Number(document.getElementById("e_znach").value);
- var r=Math.sqrt(2*3.14*r)
- document.getElementById("bv").innerHTML ="<h1>"+"Длина"+"<br>"+ r +"<h1>";
-
- var r1=Math.sqrt(r*r*3.14)
-
- document.getElementById("av").innerHTML ="<h1>"+"Площадь"+"<br>"+ r +"<h1>";
- 
- }
-  function func6(){
-var x;
-var y;
-x=Number(document.getElementById("f_znach").value);
-y=Number(document.getElementById("fd_znach").value);
-
- var x=Math.sqrt(x*x*x-2.5*x*y+1.78*x*x-2.5*y+1)
- document.getElementById("ave").innerHTML ="<h1>"+"Ответ"+"<br>"+ x +"<h1>";
-
-
- }
+  document.getElementById("f").innerHTML="<h1>" + "Ltzcnrb" + "<br>" + Number(q+w) + "<h1>"
+  }
  </script>
  </head>
  <body>
@@ -79,38 +59,12 @@ y=Number(document.getElementById("fd_znach").value);
   <h1>Задача 1.26</h1>
   Радиус r=<input type="text" value="0" id="b_znach">
   <button onclick="func2()">1.26</button>
-  <div id="b"></div>
-  <h1>Задача 1.27</h1>
-  высота h=<input type="text" value="0" id="c_znach">
-  <button onclick="func3()">1.27</button>
-  <div id="asd"></div>
-  <h1>Задача 1.28</h1>
-  Длина l=<input type="text" value="0" id="d_znach">
-  <button onclick="func4()">1.28</button>
-  <div id="avd"></div>
-  <div id="zcd"></div>
-  <h1>Задача 1.29</h1>
-  Радиус r1=<input type="text" value="0" id="e_znach">
-  <button onclick="func5()">1.29</button>
-  <div id="bv"></div>
-  <div id="av"></div>
-  <h1>Задача 1.30</h1>
-  x=<input type="text" value="0" id="f_znach">
-  y=<input type="text" value="0" id="fd_znach">
-  
-
-  <button onclick="func6()">1.30</button>
-  <div id="ave"></div>
-  
-  <h1>Задача 1.31</h1>
-  Радиус r1=<input type="text" value="0" id="e_znach">
-  <button onclick="func5()">1.31</button>
-  <div id="av"></div>
-  
-  <h1>Задача 1.32</h1>
-  Радиус r1=<input type="text" value="0" id="e_znach">
-  <button onclick="func5()">1.32</button>
-  <div id="av"></div>
-  <div id="zc"></div>
-  </body>
-</html>
+  <div id="b"></div> 
+  <h1>Задача 2.10</h1>
+  d=<input typr="text" value="34" id="d_znach">
+  <button onclick="func3()">2.10</button>
+  <div id="d"></div>
+  <div id="e"></div>
+  <div id="f"></div>
+  </body> 
+ </html>
